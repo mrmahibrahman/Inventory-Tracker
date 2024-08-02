@@ -4,8 +4,6 @@
 // make it a client-sided app 
 'use client'
 
-
-
 // import these
 import { useState, useEffect } from 'react';
 import { firestore } from '@/firebase';
@@ -13,8 +11,6 @@ import { Box, Modal, Typography, Stack, TextField, Button, Grid, useMediaQuery }
 import { collection, deleteDoc, doc, getDocs, query, getDoc, setDoc } from 'firebase/firestore';
 import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from '../firebase'
-
-require('dotenv').config();
 
 
 export default function Home() {
