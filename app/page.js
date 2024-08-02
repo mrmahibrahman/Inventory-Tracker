@@ -1,7 +1,10 @@
 // Page.js is your main component for this project!
 
+
 // make it a client-sided app 
 'use client'
+
+
 
 // import these
 import { useState, useEffect } from 'react';
@@ -9,7 +12,10 @@ import { firestore } from '@/firebase';
 import { Box, Modal, Typography, Stack, TextField, Button, Grid, useMediaQuery } from '@mui/material';
 import { collection, deleteDoc, doc, getDocs, query, getDoc, setDoc } from 'firebase/firestore';
 import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from '../../../project2REAL/inventory_management/firebase'
+import { auth } from '../firebase'
+
+require('dotenv').config();
+
 
 export default function Home() {
   // authentication state
